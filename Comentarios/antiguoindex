@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Dulceria La esmeralda</title>
+    <link rel="shortcut icon" href="/Imagenes/logo.png">
+    <link rel="stylesheet" href="/CSS/pagIni.css">
+    <link rel="stylesheet" href="/CSS/buscador.css">
+    <link rel="stylesheet" href="/CSS/cuadradochafa.css">
+    <script src="/JS/registro.js"></script>
+</head>
+<body>
+    <div class = "encabezado">Dulceria la Esmeralda</div>
+    <div class = "barraOps">
+        <div>
+            <a href="producto.html">Mas vendido </a>
+            <a href="producto.html">Mas vendido </a>
+            <a href="producto.html">Mas vendido </a>
+            <a href="producto.html">Mas vendido </a>
+            <a href="producto.html">Mas vendido </a>
+       
+        </div>
+       
+    </div >
+   
+    
+    <div class ="pantallaGeneral">
+        <div class = "productos">
+            <div class ="producto">
+            <div></div>
+            <div></div>
+        </div>
+        <div class ="producto">
+            <div></div>
+            <div></div>
+        </div>
+        <div class ="producto">
+            <div></div>
+            <div></div>
+        </div>
+        <div class ="producto">
+            <div></div>
+            <div></div>
+        </div>
+        <div class ="producto">
+            <div></div>
+            <div></div>
+        </div>
+        <div class ="producto">
+            <div></div>
+            <div></div>
+        </div>
+        <div class ="producto">
+            <div></div>
+            <div></div>
+        </div>
+        <div class ="producto">
+            <div></div>
+            <div></div>
+        </div>
+        <div class ="producto">
+            
+        </div> 
+    </div>
+    <div class="pantallaBus">
+        <div class ="barraBus"></div>
+        <div></div>
+    </div>
+    </div>
+    
+</body>
+</html>
