@@ -1,170 +1,306 @@
-*{
-    padding: 0;
-    margin: 0;
+* {
+  padding: 0;
+  margin: 0;
 }
-body{
-    background-color: rgb(255, 255, 255);
-}
-header{
-    width: 100%;
-    align-items: center;
 
-    
-}a{
-    background-color:  rgb(254, 106, 94);
-    color:whitesmoke;
-    font-family: "Satisfy", cursive;
-    font-size: 15px;
-    text-align: left;
-    gap: flex;
-    text-decoration: none;
-}
-a:hover{
-    box-shadow: 5px 5px 5px 2px rgb(203, 173, 19);
-}
-.encabezado{
-    background-color: rgb(228,45 ,49 );
-    color:whitesmoke;
-    font-family: "Satisfy", cursive;
-    font-size: 40px;
-    text-align: center;
-    width: 96%;
-    padding: 20px;
-    box-shadow: 10px 7px 10px gray;
-    margin: 5px;
-    border-radius: 15px;
-    gap: flex;
-}
-.barraOps{
-    background-color: rgb(254, 106, 94);
-    padding: 10px;
-    box-shadow: 10px 7px 10px gray;
-    margin: 5px;
-    border-radius: 15px;
-    margin-left: 4.5%;
-    margin-bottom: 10px;
-    width: 90%;
-    gap: flex;
-}
-.pantallaGeneral{
-    margin-left: 3vh;
-    display: grid;
-    width: 100%;
-    height: 100%;
-    grid-template-columns: 10fr 10fr;
-}
-.productos{
-    display: grid;
-    margin: 0;
-    background-color: white;
-    width: 100%;
-    height: 100%;
-    gap:20px;
-    grid-template-columns:  1fr 1fr 1fr 1fr 1fr ;
-}
-.producto {            /*el cuadrado del producto*/ 
-    position: relative;
-    width:160px;
-    height: 16.5em;
-    box-shadow: 0px 1px 13px rgba(0,0,0,0.1);
-    cursor: pointer;
-    transition: all 120ms;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background: #fff;
-    padding: 0.8em;
-    padding-bottom: 3.4em;
+header {
+  width: 100%;
+  align-items: center;
 
-  }
-  
-  .producto::after {  /* Esto es el cuadro verde de compra */ 
-    content: "Comprar ahora";
-    padding-top: 1.25em;
-    padding-left: 1.2em;
-    position: absolute;
-    left: 0;
-    bottom: -60px;
-    background: #00AC7C;
-    color: #fff;
-    height: 2.5em;
-    width: 90%;
-    transition: all 80ms;
-    font-weight: 600;
-    text-transform: uppercase;
-    opacity: 0; 
 
-  }
-  .producto:hover{
-    box-shadow: 8px 5px 3px gray;
-  }
-  
-  .producto .title { /*titulo del producto*/ 
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 0.9em;
-    position: absolute;
-    left: 0.625em;
-    bottom: 1.875em;
-    font-weight: 400;
-    color: #000;
-  }
-  
-  .producto .price { /* Pecio del producto*/ 
-    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    font-size: 0.9em;
-    position: absolute;
-    left: 0.625em;
-    bottom: 0.625em;
-    color: #000;
-  }
-  
-  .producto:hover::after {
-    bottom: 0;
-    opacity: 1;
-  }
-  
-  .producto:active {
-    transform: scale(0.98);
-  }
-  
-  
-  .conteimg { /* el contenedor de la imagen */ 
-    background: rgb(241, 241, 241);
-    width: 100% ;
-    height: 100% ;
-    display: grid;
-    place-items: center;
-  }
-  .img{
-    width: 80% ;
-    height: 80% ;
-  }
+}
 
-.menuBus{
-    border-radius: 15px;
-    margin-left: 10vh;
-    width: 67%;
-    height: 100%;
-    color: whitesmoke;
-    display: block;
-    background-color: rgb(231, 220, 220);
-    box-shadow: 10px 7px 5px gray;
+body {
+  background-color: rgb(255, 255, 255);
 }
-.barraBus{
-    transition: 1s;
-    margin: 10px 100px 100px 80px;
-    width: 30px;
-    height: 30px;
-    border-radius: 70px;
-    background-color: white;
-    text-align: center ;
-    color: black;
+
+nav {
+  width: 100%;
 }
-.barraBus:hover{
-    transition: 1s;
-    margin: 10px ;
-    width: 90%;
-    height: 30px;
-    border-radius: 70px;
-    background-color:whitesmoke;
+
+footer {
+  display: flex;
+  align-items: center;
+  height: 250px;
+  width: 100%;
+  background-color: #000;
+  position: relative;
+  color: white;
+}
+
+a {
+  background-color: rgb(254, 106, 94);
+  color: whitesmoke;
+  font-family: "Satisfy", cursive;
+  font-size: 15px;
+  text-align: left;
+  gap: flex;
+  text-decoration: none;
+}
+
+a:hover {
+  box-shadow: 5px 5px 5px 2px rgb(203, 173, 19);
+}
+
+
+
+section {
+  display: flex;
+  width: 550px;
+  height: 100%;
+}
+
+section img {
+  width: 0px;
+  flex-grow: 1;
+  object-fit: cover;
+  opacity: .8;
+  transition: .9s ease;
+
+}
+
+section .img1:hover {
+  width: 200px;
+  height: 100%;
+  opacity: 1;
+  filter: contrast(120%);
+
+}
+
+section .img2:hover {
+  width: 550px;
+  height: 100%;
+  opacity: 1;
+  filter: contrast(120%);
+  image-rendering: pixelated;
+}
+
+section .img3:hover {
+  width: 200px;
+  height: 100%;
+  opacity: 1;
+  filter: contrast(120%);
+
+}
+
+section .img4:hover {
+  width: 200px;
+  height: 100%;
+  opacity: 1;
+  filter: contrast(120%);
+
+}
+
+section .img5:hover {
+  width: 200px;
+  height: 100%;
+  opacity: 1;
+  filter: contrast(120%);
+  position: relative;
+
+}
+
+
+
+.encabezado {
+  background-color: rgb(228, 45, 49);
+  color: whitesmoke;
+  font-family: "Satisfy", cursive;
+  font-size: 40px;
+  text-align: center;
+  width: 96%;
+  padding: 20px;
+  box-shadow: 10px 7px 10px gray;
+  margin: 5px;
+  border-radius: 15px;
+  gap: flex;
+}
+
+.barraOps {
+  background-color: rgb(254, 106, 94);
+  padding: 10px;
+  box-shadow: 10px 7px 10px gray;
+  margin: 5px;
+  border-radius: 15px;
+  margin-left: 4.5%;
+  margin-bottom: 10px;
+  width: 90%;
+  gap: flex;
+}
+
+.pantallaGeneral {
+  margin-left: 3vh;
+  display: grid;
+  width: 100%;
+  height: 100%;
+  grid-template-columns: 10fr 10fr;
+}
+
+.productos {
+  display: grid;
+  margin: 0;
+  background-color: white;
+  width: 100%;
+  height: 100%;
+  gap: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.producto {
+  /*el cuadrado del producto*/
+  position: relative;
+  width: 160px;
+  height: 16.5em;
+  box-shadow: 0px 1px 13px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  transition: all 120ms;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+  padding: 0.8em;
+  padding-bottom: 3.4em;
+
+}
+
+.producto::after {
+  /* Esto es el cuadro verde de compra */
+  content: "Comprar ahora";
+  padding-top: 1.25em;
+  padding-left: 1.2em;
+  position: absolute;
+  left: 0;
+  bottom: -60px;
+  background: #00AC7C;
+  color: #fff;
+  height: 2.5em;
+  width: 90%;
+  transition: all 2s;
+  font-weight: 600;
+  text-transform: uppercase;
+  opacity: 0;
+
+}
+
+.producto:hover {
+  box-shadow: 8px 5px 3px gray;
+}
+
+.producto .title {
+  /*titulo del producto*/
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 1.875em;
+  font-weight: 400;
+  color: #000;
+}
+
+.producto .price {
+  /* Pecio del producto*/
+  font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+  font-size: 0.9em;
+  position: absolute;
+  left: 0.625em;
+  bottom: 0.625em;
+  color: #000;
+}
+
+.producto:hover::after {
+  bottom: 0;
+  opacity: 1;
+}
+
+.producto:active {
+  transform: scale(0.98);
+}
+
+
+.conteimg {
+  /* el contenedor de la imagen */
+  background: rgb(241, 241, 241);
+  width: 100%;
+  height: 100%;
+  display: grid;
+  place-items: center;
+}
+
+.img {
+  width: 80%;
+  height: 80%;
+}
+
+.menuBus {
+  border-radius: 15px;
+  margin-left: 10vh;
+  width: 67%;
+  height: 100%;
+  color: whitesmoke;
+  display: block;
+  background-color: rgb(231, 220, 220);
+  box-shadow: 10px 7px 5px gray;
+}
+
+.barraBus {
+  transition: 1s;
+  margin: 10px 100px 100px 80px;
+  width: 30px;
+  height: 30px;
+  border-radius: 70px;
+  background-color: white;
+  text-align: center;
+  color: black;
+}
+
+.barraBus:hover {
+  transition: 1s;
+  margin: 10px;
+  width: 90%;
+  height: 30px;
+  border-radius: 70px;
+  background-color: whitesmoke;
+}
+
+.pie {
+  display: flex;
+  width: 100%;
+  height: 100%;
+}
+
+.pie p {
+  top: 5px;
+  left: 85vh;
+  position: absolute;
+  opacity: 0;
+}
+
+.pie section .img1:hover~.p1 {
+  transition: 1s;
+  opacity: 1;
+
+}
+
+.pie section .img2:hover~.p2 {
+  transition: 1s;
+  opacity: 1;
+
+}
+
+.pie section .img3:hover~.p3 {
+  transition: 1s;
+  opacity: 1;
+
+}
+
+.pie section .img4:hover~.p4 {
+  transition: 1s;
+  opacity: 1;
+
+}
+
+.pie section .img5:hover~.p5 {
+  transition: 1s;
+  opacity: 1;
+
 }
