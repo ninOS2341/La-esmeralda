@@ -1,44 +1,74 @@
+/****************************************
+
+  CODIGO QUE SE APLICARA A TODA LA PAGINA
+
+*****************************************/
 * {
   padding: 0;
   margin: 0;
   list-style: none;
   text-decoration: none;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Nunito', sans-serif;
+  text-decoration: none;
 }
 
+/**************************************************
+
+  ELEMNTO ID EL CUAL CONTIENE DENTRO TODA LA PAGINA
+
+****************************************************/
 #PagP {
   display: grid;
   width: 100%;
-  height: 100%;
+  height: 355vh;
 }
 
+/****************************************
 
+  CODIGO QUE SE APLICARA A TODA LA PAGINA
+
+*****************************************/
 #Cabeza {
   display: grid;
-  grid-template-rows: 1fr 1fr;
   align-items: center;
   justify-content: center;
   width: 100%;
-  height: 25vh;
-  background: radial-gradient(rgb(148, 64, 64), rgb(141, 40, 40));
+  background: radial-gradient(#FF0100, rgb(141, 40, 40));
+  height: 160%;
+  padding-bottom: 1%;
+  border: solid 4px goldenrod;
 }
 
+/***************************************************
+
+ CONTENEDOR QUE TIENE DENTRO LA CABEZA DE LA PAGINA
+
+****************************************************/
 .Titulo {
   text-align: center;
-  border: solid goldenrod 4px;
-  width: 100vh;
-  height: 20%;
+  width: 100%;
+  height: 300px;
+}
+
+sup {
+  font-family: 'Times New Roman', Times, serif;
 }
 
 .tsup {
   color: goldenrod;
-  font-size: 3.5vh;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 250%;
   letter-spacing: 9vh;
   text-indent: 9vh;
 }
 
 .tmid {
+  font-family: 'Times New Roman', Times, serif;
   color: whitesmoke;
-  font-size: 5vh;
+  font-size: 350%;
   text-shadow: 1px 0px 0px black,
     /*sombra dentro de la letra*/
     0px 1px 0px black,
@@ -48,11 +78,13 @@
     0px -1px 0px black;
   /*sombra fuera de la letra*/
 
+
 }
 
 .tsub {
+  font-family: 'Times New Roman', Times, serif;
   color: whitesmoke;
-  font-size: 2vh;
+  font-size: 150%;
   text-shadow: 1px 0px 0px black,
     /*sombra dentro de la letra*/
     0px 1px 0px black,
@@ -64,41 +96,428 @@
   text-indent: 38vh;
 }
 
-#Menu {
-  margin-top: 3vh;
+/****************************************
+
+  MENU DESPLEGABLE
+
+*****************************************/
+
+#navegador {
   width: 100%;
-  height: 3vh;
-  border-bottom: solid goldenrod 4px;
+  height: 17vh;
+
+  border-right: goldenrod solid 0px;
+  background-color: aqua;
+
+}
+
+/****************************************
+
+  PARTE SUPERIOR
+
+*****************************************/
+.msup {
+  display: grid;
+  grid-template-columns: 5fr 1fr;
+  width: 100%;
+  height: 10vh;
+}
+
+.usuario {
+  border: solid goldenrod 4px;
+  display: grid;
+  align-items: center;
+  justify-items: center;
+  grid-template-columns: 1fr 1fr;
+  background-color: aliceblue;
+  width: 15vh;
+  height: 7vh;
+}
+
+.carrito {
+  background: url(../Imagenes/Otros/carrito-de-compras.png);
+  background-size: 5vh 4vh;
+  width: 5vh;
+  height: 4vh;
+  cursor: pointer;
+}
+
+.carrito:hover {
+
+  background: url(../Imagenes/Otros/carrito-de-compras\ \(1\).png);
+  background-size: 5vh 4vh;
+  width: 5vh;
+  height: 4vh;
+
+}
+
+.imgusuario {
+  background: url(../Imagenes/Otros/usuario.png);
+  background-size: 5vh 4vh;
+  width: 5vh;
+  height: 4vh;
+  cursor: pointer;
+}
+
+.usuario {
+  cursor: pointer;
+}
+
+.usuario:hover>.imgusuario {
+  background: url(../Imagenes/Otros/usuario1.png);
+  background-size: 5vh 4vh;
+  width: 5vh;
+  height: 4vh;
+}
+
+.mbuscador {
+  border-left: solid goldenrod 4px;
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+}
+
+.buscador-contenedor {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  width: 80vh;
+  position: relative;
 }
 
 
-#Menu li:hover{
- cursor: pointer;
- text-decoration: underline;
+
+.lupa {
+  position: absolute;
+  left: 70vh;
+  top: calc(50% + 5px);
+  transform: translateY(calc(-50% - 5px));
+
 }
+
+.buscador {
+  width: 70vh;
+  height: 20px;
+  padding: 17px;
+  transition: .2s linear;
+  border: solid silver 0.5px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  border-radius: 2px;
+
+}
+
+.buscador:focus {
+  outline: none;
+  border: 0.5px solid rgb(255, 250, 250);
+  box-shadow: 1px 1px 2px 2px #AD0100;
+
+}
+
+.buscador-contenedor:hover>.lupa {
+  animation: anim 1s linear infinite;
+}
+
+
+
+@keyframes anim {
+
+  0%,
+  100% {
+    transform: translateY(calc(-50% - 5px)) scale(1);
+  }
+
+  50% {
+    transform: translateY(calc(-50% - 5px)) scale(1.1);
+  }
+
+}
+
+.mperfil {
+  background-color: rgb(255, 255, 255);
+  height: 100%;
+  border-right: solid goldenrod 4px;
+
+  grid-template-columns: 2fr 1fr;
+  align-items: center;
+  justify-items: center;
+
+}
+
+/****************************************
+
+  PARTE INFERIOR
+
+*****************************************/
+
+.msub {
+
+  background-color: red;
+  width: 100%;
+  height: 100%;
+  border-right: goldenrod solid px;
+  border-left: solid goldenrod 0px;
+}
+
+#menu {
+
+  position: relative;
+  bottom: 0px;
+  width: 100%;
+
+  background: red;
+}
+
+.n1 {
+
+  float: left;
+  width: 20%;
+  text-align: center;
+  line-height: 50px;
+  border: solid 1px goldenrod;
+  background-color: #AD0100;
+  color: white;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+
+  letter-spacing: 5px;
+
+}
+
+.n1:hover {
+  background: rgb(204, 22, 22);
+  transition: background .5s ease-out;
+}
+
+.n2 {
+
+  width: 100%;
+  text-align: center;
+  line-height: 42px;
+  border-top: solid 0.5px silver;
+  border-left: solid 0.5px silver;
+  border-right: solid 0.5px silver;
+  border-bottom: solid 0.5px silver;
+  background-color: rgb(245, 241, 230);
+  color: black;
+}
+
+.n2:hover {
+  background: rgb(247, 248, 238);
+  transition: background .7s ease-out;
+}
+
+#menu ul li ul {
+  display: none;
+
+}
+
+#menu ul li:hover ul {
+  display: block;
+
+}
+
 
 #Cuerpo {
   display: grid;
-  grid-template-rows: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr;
   width: 100%;
-  height: 215vh;
+  height: 100%;
 }
+
+/****************************************
+
+  ANUNCIOS EN CARUSEL
+
+*****************************************/
 
 .Anuncios {
   width: 100%;
-  height: 80vh;
-  background-color: blueviolet;
+  height: 114vh;
+  background-color: rgb(233, 178, 31);
 }
 
-.anuncio {}
-
-.Categorias {
+.anuncio {
   width: 100%;
   height: 100vh;
-  background-color: aqua;
+  margin: 50px auto 0;
+  overflow: hidden;
 }
 
-.dulces {}
+.anuncio ul {
+  display: flex;
+  padding: 0;
+  width: 400%;
+  animation: slide 24s infinite alternate ease-in-out;
+
+}
+
+.anuncio li {
+  list-style: none;
+  width: 100%;
+}
+
+.anuncio img {
+  width: 100%;
+}
+
+@keyframes slide {
+  0% {
+    margin-left: 0%;
+  }
+
+  20% {
+    margin-left: 0%;
+  }
+
+  25% {
+    margin-left: -100%;
+  }
+
+  45% {
+    margin-left: -100%;
+  }
+
+  50% {
+    margin-left: -200%;
+  }
+
+  70% {
+    margin-left: -200%;
+  }
+
+  75% {
+    margin-left: -300%;
+  }
+
+  95% {
+    margin-left: -300%;
+  }
+}
+
+/***********
+
+  CATEGORIAS
+
+************/
+.Categorias {
+  width: 100%;
+  height: 130vh;
+  background-color: rgb(163, 33, 33);
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-row: 1fr;
+  gap: 50px;
+  transition: opacity 0.6s ease;
+}
+
+.dulces {
+  border-radius: 50%;
+  color: red;
+  font-size: 3.5vh;
+}
+
+.Categorias:hover> :not(:hover) {
+  opacity: 0.4;
+}
+
+#chocolate {
+  background-image: url(imagenes/chocolate.png);
+}
+
+#caramelos {
+  background-image: url(imagenes/caramelo.png);
+}
+
+#gomitas {
+  background-image: url(imagenes/azucarado.png);
+}
+
+#chicles {
+  background-image: url(imagenes/goma.png);
+}
+
+#bombones {
+  background-image: url(imagenes/malvavisco.png);
+}
+
+#botanas {
+  background-image: url(imagenes/papas-fritas.png);
+}
+
+
+
+#pie {
+  width: 100%;
+  height: 20vh;
+  background-color: black;
+}
+
+.container-related-products h2 {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.card-list-products {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 25px;
+}
+
+.card {
+  cursor: pointer;
+}
+
+.card-img {
+  background: transparent;
+  margin-bottom: 15px;
+}
+
+.card-img img {
+  height: 400px;
+  object-fit: cover;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+.info-card {
+  display: flex;
+  justify-content: space-between;
+}
+
+.text-product {
+  color: #252525;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
+.text-product h3 {
+  color: inherit;
+  font-weight: inherit;
+  font-size: 15px;
+}
+
+.text-product h3:hover {
+  color: #1bbeb4;
+}
+
+.text-product p {
+  color: #666;
+  font-size: 13px;
+}
+
+.text-product p:hover {
+  color: #1bbeb4;
+}
+
+
+/****************************************
+
+  PIE DE PAGINA
+
+*****************************************/
 
 #Pie {
   width: 100%;
@@ -107,29 +526,118 @@
   display: grid;
   grid-template-columns: 3fr 3fr 3fr 3fr;
 }
-#Pie a{
+
+#Pie a {
   color: white;
   cursor: pointer;
   margin: 2vh;
 }
 
-#Pie h3{
+#Pie h3 {
   color: white;
   text-align: center;
 }
 
-.titulo{
-width: 100%;
-height: 5vh;
+.titulo {
+  width: 100%;
+  height: 5vh;
 }
 
-.cuerpo{
+.cuerpo {
   width: 100%;
   height: 100%;
 }
 
-.loca{
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200;0,300;0,400;0,600;0,700;0,800;0,900;1,200;1,300;1,400;1,600;1,700;1,800;1,900&display=swap');
+
+footer {
   width: 100%;
+  padding: 50px 0px;
+  background-image: url(../Sources/Footer.svg);
   background-size: cover;
-  cursor: pointer;
+  background-color: rgb(163, 33, 33);
+  -webkit-mask-image: url("../Sources/Mascara.jpg");
+  mask-image: url("../Sources/Mascara.jpg");
+  -webkit-mask-size: cover;
+  mask-size: cover;
+}
+
+.container_footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+
+.box_footer {
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+}
+
+.box_footer .logo img {
+  width: 170px;
+}
+
+.box_footer .terms {
+  max-width: 350px;
+  margin-top: 20px;
+  font-weight: 500;
+  color: #7a7a7a;
+  font-size: 18px;
+}
+
+.box_footer h2 {
+  margin-bottom: 30px;
+  color: #343434;
+  font-weight: 700;
+}
+
+.box_footer a {
+  margin-top: 10px;
+  color: #7a7a7a;
+  font-weight: 600;
+}
+
+.box_footer a:hover {
+  opacity: 0.8;
+}
+
+.box_footer a .fab {
+  font-size: 20px;
+  color: purple;
+}
+
+.box_copyright {
+  max-width: 1200px;
+  margin: auto;
+  text-align: center;
+  padding: 0px 40px;
+  position: relative;
+  top: 100px;
+}
+
+.box_copyright p {
+  margin-top: 20px;
+  color: #7a7a7a;
+  position: absolute;
+  left: -170px;
+}
+
+.box_copyright hr {
+  border: none;
+  height: 1px;
+  background-color: #7a7a7a;
+  position: absolute;
+  left: -650px;
+
+}
+
+.Ubicacion {
+  position: relative;
+  left: 650px;
+  width: 10%;
+  top: -180px;
 }
