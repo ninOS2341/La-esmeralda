@@ -36,10 +36,11 @@
   align-items: center;
   justify-content: center;
   width: 100%;
-  background: radial-gradient(#FF0100, rgb(141, 40, 40));
+  background: #CB4335 ;
   height: 160%;
   padding-bottom: 1%;
-  border: solid 4px goldenrod;
+ 
+
 }
 
 /***************************************************
@@ -60,15 +61,23 @@ sup {
 .tsup {
   color: goldenrod;
   font-family: 'Times New Roman', Times, serif;
-  font-size: 250%;
+  font-size: 350%;
   letter-spacing: 9vh;
-  text-indent: 9vh;
+  text-indent: 0vh;
+  text-shadow: 0.2px 0px 0px goldenrod,
+    /*sombra dentro de la letra*/
+    0px 0.2px 0px goldenrod,
+    /*sombra dentro de la letra*/
+    -0.2px 0px 0px goldenrod,
+    /*sombra fuera de la letra*/
+    0px -0.2px 0px goldenrod;
+  /*sombra fuera de la letra*/
 }
 
 .tmid {
   font-family: 'Times New Roman', Times, serif;
   color: whitesmoke;
-  font-size: 350%;
+  font-size: 450%;
   text-shadow: 1px 0px 0px black,
     /*sombra dentro de la letra*/
     0px 1px 0px black,
@@ -77,6 +86,7 @@ sup {
     /*sombra fuera de la letra*/
     0px -1px 0px black;
   /*sombra fuera de la letra*/
+  text-indent: -5vh;
 
 
 }
@@ -84,7 +94,7 @@ sup {
 .tsub {
   font-family: 'Times New Roman', Times, serif;
   color: whitesmoke;
-  font-size: 150%;
+  font-size: 230%;
   text-shadow: 1px 0px 0px black,
     /*sombra dentro de la letra*/
     0px 1px 0px black,
@@ -93,7 +103,7 @@ sup {
     /*sombra fuera de la letra*/
     0px -1px 0px black;
   /*sombra fuera de la letra*/
-  text-indent: 38vh;
+  text-indent: 55vh;
 }
 
 /****************************************
@@ -104,10 +114,9 @@ sup {
 
 #navegador {
   width: 100%;
-  height: 17vh;
+  height: 11vh;
+  background-color: #B03A2E;
 
-  border-right: goldenrod solid 0px;
-  background-color: aqua;
 
 }
 
@@ -124,62 +133,56 @@ sup {
 }
 
 .usuario {
-  border: solid goldenrod 4px;
+  position:absolute;
+  top: 5%;
+  left: 5%;
+  width: 50%;
+  height: 10vh;
+  cursor: pointer;
+  color: #ffffff ;
+  z-index: 1;
+
+}
+.usuario:hover {
+  color: #f9dcdc;
+  transition: color .5s ease-out;
+
+}
+.usuario p{
+  
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 20px;
+  position: relative;
+  left: -37px;
+  
+}
+.carrito1{
+  position: absolute;
+  top: 58%;
+  left: 89%;
   display: grid;
   align-items: center;
   justify-items: center;
   grid-template-columns: 1fr 1fr;
-  background-color: aliceblue;
-  width: 15vh;
-  height: 7vh;
-}
-
-.carrito {
-  background: url(../Imagenes/Otros/carrito-de-compras.png);
-  background-size: 5vh 4vh;
-  width: 5vh;
-  height: 4vh;
+  height: 10vh;
   cursor: pointer;
-}
-
-.carrito:hover {
-
-  background: url(../Imagenes/Otros/carrito-de-compras\ \(1\).png);
-  background-size: 5vh 4vh;
-  width: 5vh;
-  height: 4vh;
+  color: white;
 
 }
-
-.imgusuario {
-  background: url(../Imagenes/Otros/usuario.png);
-  background-size: 5vh 4vh;
-  width: 5vh;
-  height: 4vh;
-  cursor: pointer;
-}
-
-.usuario {
-  cursor: pointer;
-}
-
-.usuario:hover>.imgusuario {
-  background: url(../Imagenes/Otros/usuario1.png);
-  background-size: 5vh 4vh;
-  width: 5vh;
-  height: 4vh;
-}
-
 .mbuscador {
-  border-left: solid goldenrod 4px;
+
   display: grid;
   align-items: center;
   justify-content: center;
   background-color: rgb(255, 255, 255);
   height: 100%;
+  width: 80%;
 }
 
 .buscador-contenedor {
+  position: relative;
+  top:0px;
+  left: 30%;
   display: grid;
   align-items: center;
   justify-content: center;
@@ -187,7 +190,15 @@ sup {
   position: relative;
 }
 
+.carrito1 i:hover {
+ color:#666;
+ transition: color .5s ease-out;
+}
 
+.usuario i:hover{
+  color:#666;
+  transition: color .5s ease-out;
+ }
 
 .lupa {
   position: absolute;
@@ -213,7 +224,7 @@ sup {
 .buscador:focus {
   outline: none;
   border: 0.5px solid rgb(255, 250, 250);
-  box-shadow: 1px 1px 2px 2px #AD0100;
+  box-shadow: 1px 1px 2px 2px #CB4335 ;
 
 }
 
@@ -239,12 +250,9 @@ sup {
 .mperfil {
   background-color: rgb(255, 255, 255);
   height: 100%;
-  border-right: solid goldenrod 4px;
-
-  grid-template-columns: 2fr 1fr;
-  align-items: center;
-  justify-items: center;
-
+  width: 200%;
+  position: relative;
+  left: -100%;
 }
 
 /****************************************
@@ -255,10 +263,10 @@ sup {
 
 .msub {
 
-  background-color: red;
+  background-color:#CB4335 ;
   width: 100%;
-  height: 100%;
-  border-right: goldenrod solid px;
+  height: 41.%;
+  border-right: goldenrod solid 1px;
   border-left: solid goldenrod 0px;
 }
 
@@ -266,19 +274,19 @@ sup {
 
   position: relative;
   bottom: 0px;
-  width: 100%;
+  width: 90%;
+  z-index: 1;
+  background: #CB4335 ;
 
-  background: red;
 }
 
 .n1 {
 
   float: left;
-  width: 20%;
+  width: 19%;
   text-align: center;
   line-height: 50px;
-  border: solid 1px goldenrod;
-  background-color: #AD0100;
+  background-color:#B03A2E ;
   color: white;
   font-family: 'Times New Roman', Times, serif;
   font-size: 20px;
@@ -301,13 +309,14 @@ sup {
   border-left: solid 0.5px silver;
   border-right: solid 0.5px silver;
   border-bottom: solid 0.5px silver;
-  background-color: rgb(245, 241, 230);
+  background-color: rgb(239, 235, 222);
   color: black;
 }
 
 .n2:hover {
-  background: rgb(247, 248, 238);
-  transition: background .7s ease-out;
+  background: rgb(253, 253, 253);
+  transition: background .5s ease-out;
+  color:rgb(55, 54, 54);
 }
 
 #menu ul li ul {
@@ -317,6 +326,7 @@ sup {
 
 #menu ul li:hover ul {
   display: block;
+  ;
 
 }
 
@@ -336,32 +346,36 @@ sup {
 
 .Anuncios {
   width: 100%;
-  height: 114vh;
+  height: 81.5vh;
   background-color: rgb(233, 178, 31);
 }
 
 .anuncio {
   width: 100%;
-  height: 100vh;
+  height: 80vh;
   margin: 50px auto 0;
   overflow: hidden;
+  position: relative;
+  top: -45px;
 }
 
 .anuncio ul {
   display: flex;
   padding: 0;
   width: 400%;
-  animation: slide 24s infinite alternate ease-in-out;
+  animation: slide 36s infinite alternate ease-in-out;
 
 }
 
 .anuncio li {
   list-style: none;
   width: 100%;
+  position: relative;
 }
 
 .anuncio img {
   width: 100%;
+
 }
 
 @keyframes slide {
@@ -397,7 +411,14 @@ sup {
     margin-left: -300%;
   }
 }
-
+/************
+*/
+.lomasvendido{
+  width: 100%;
+  height: 65vh;
+  background-color: rgb(255, 255, 255);
+  
+}
 /***********
 
   CATEGORIAS
@@ -406,49 +427,137 @@ sup {
 .Categorias {
   width: 100%;
   height: 130vh;
-  background-color: rgb(163, 33, 33);
+  background-color: #CB4335 ;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-row: 1fr;
-  gap: 50px;
-  transition: opacity 0.6s ease;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 0px;
+  padding: 50px;
 }
 
+
+
 .dulces {
+  
   border-radius: 50%;
-  color: red;
-  font-size: 3.5vh;
+  width: 280px;
+  height: 280px;
+
+
+}
+.dulces a{
+  font-family: 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  font-size: 300%;
+  
+  text-shadow: 1px 0px 0px #160D08,
+    0px 1px 0px #160D08,
+    -1px 0px 0px  #160D08,
+    0px -1px 0px  #160D08;
+}
+.dulces:hover{
+  transition:  opacity .10s ease-out;
 }
 
 .Categorias:hover> :not(:hover) {
   opacity: 0.4;
+  transition: opacity 0.8s ease-out;
+
 }
 
 #chocolate {
-  background-image: url(imagenes/chocolate.png);
+  background-image: url(/imagenes1/chocolates.jpeg);
+  background-size: 115%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 1.9s ease-out;
 }
 
 #caramelos {
-  background-image: url(imagenes/caramelo.png);
+  background-image: url(/imagenes1/caramelos.jpeg);
+  background-size: 140%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 1.9s ease-out;
 }
 
 #gomitas {
-  background-image: url(imagenes/azucarado.png);
+  background-image: url(/imagenes1/gomitas.jpeg);
+  background-size: 140%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 1.9s ease-out;
+
+
 }
 
 #chicles {
-  background-image: url(imagenes/goma.png);
+  background-image: url(/imagenes1/otros.jpeg);
+  background-size: 185%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 1.9s ease-out;
+
+
 }
 
 #bombones {
-  background-image: url(imagenes/malvavisco.png);
+  background-image: url(/imagenes1/bombon.jpeg);
+  background-size: 139%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 1.9s ease-out;
+
 }
 
 #botanas {
-  background-image: url(imagenes/papas-fritas.png);
+  background-image: url(/imagenes1/botanas.jpeg);
+  background-size: 120%;
+  background-position: center;
+  background-repeat: no-repeat;
+  transition: opacity 1.9s ease-out;
+
 }
+.mas_vendido_texto{
+  padding-top:20px ;
+  text-align: center;
+  background: #CB4335 ;
+  font-family: 'Times New Roman', Times, serif;
+  color: rgb(255, 255, 255);
+  font-size: 350%;
+  height: 15vh;
 
 
+}
+.globo{
+  background-image: url(/imagenes1/globo_de_texto.png);
+  position: absolute;
+  background-size: cover;
+  width: 350px;
+  height: 300px;
+  text-align: center;
+  top: 282%;
+  left: 55%;
+}
+.globo p{
+  width: 350px;
+  font-family: 'Times New Roman', Times, serif;
+  color: goldenrod;
+  font-size: 280%;
+  position: relative;
+  top:12%;
+  left: -2%;
+
+}
+.tendera{
+  background-image: url(/imagenes1/tendera.png);
+  position: absolute;
+  top: 276%;
+  left: 57.7%;
+  background-size: cover;
+  width: 550px;
+  height: 550px;
+  z-index: 1;
+}
 
 #pie {
   width: 100%;
@@ -511,7 +620,16 @@ sup {
 .text-product p:hover {
   color: #1bbeb4;
 }
+/****************************************
 
+  lo mas vendido
+
+*****************************************/
+#lomasvendido{
+  background-color: aliceblue;
+  width: 100%;
+  height: 100vh;
+}
 
 /****************************************
 
@@ -563,22 +681,19 @@ footer {
 }
 
 .container_footer {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  max-width: 1200px;
-  margin: auto;
-  margin-top: 100px;
+  display: grid;
+  grid-template-columns: 1.2fr 1fr 1fr 1fr
 }
 
 .box_footer {
   display: flex;
   flex-direction: column;
-  padding: 40px;
+  text-align: center;
+  padding: 50px;
 }
 
 .box_footer .logo img {
-  width: 170px;
+  width: 50%;
 }
 
 .box_footer .terms {
@@ -611,33 +726,111 @@ footer {
 }
 
 .box_copyright {
-  max-width: 1200px;
-  margin: auto;
+  display: grid;
+  width: 100%;
+  height: 10vh;
   text-align: center;
-  padding: 0px 40px;
-  position: relative;
-  top: 100px;
 }
 
 .box_copyright p {
   margin-top: 20px;
   color: #7a7a7a;
-  position: absolute;
-  left: -170px;
-}
 
-.box_copyright hr {
-  border: none;
-  height: 1px;
-  background-color: #7a7a7a;
-  position: absolute;
-  left: -650px;
 
 }
+
 
 .Ubicacion {
-  position: relative;
-  left: 650px;
-  width: 10%;
-  top: -180px;
+  width: 100%;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  font-size: 150%;
+}
+#center{
+  position: absolute;
+  top: 20%;
+  left: 35%;
+  align-items: center;
+  text-align: center;
+}
+/**********productos**********/
+#Cuerpo {
+  display: grid;
+  grid-template-rows: 1fr;
+  width: 100%;
+  height: 100%;
+}
+
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Open Sans";
+}
+header {
+  background: url();
+  background-size: cover;
+  background-position: center;
+  height: 300px;
+}
+header h1 {
+  text-align: center;
+  font-size: 35px;
+  color: #fff;
+  padding: 30px 0;
+}
+.contenedor {
+  max-width: 1200px;
+  padding-top: 3%;
+  padding-bottom:4%;
+  margin: auto;
+  display: flex;
+  justify-content: space-between;
+  contain: paint;
+}
+.contenedor .contenedor-items {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-row-gap: 30px;
+  width: 100%;
+  transition: 0.3s;
+}
+.contenedor .contenedor-items .item {
+  max-width: 200px;
+  padding: 10px;
+  margin: auto;
+  border: 1px solid #666;
+  border-radius: 10px;
+  padding: 20px;
+  transition: 0.3s;
+}
+.contenedor-items .item:hover {
+  box-shadow: 0 0 10px #666;
+}
+.contenedor-items .item .img-item {
+  width: 100%;
+}
+.contenedor-items .item .titulo-item {
+  display: block;
+  font-weight: bold;
+  text-align: center;
+  text-transform: uppercase;
+}
+.contenedor-items .item .precio-item {
+  display: block;
+  text-align: center;
+  font-weight: bold;
+  font-size: 22px;
+}
+.contenedor-items .item .boton-item {
+  display: block;
+  margin: 10px auto;
+  border: none;
+  background: #850000;
+  color: #fff;
+  padding: 5px 15px;
+  border-radius: 5px;
+  cursor: pointer;
 }

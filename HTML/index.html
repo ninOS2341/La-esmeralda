@@ -5,9 +5,12 @@
         <meta charset="UTF-8">
         <title>La esmeralda</title>
         <link rel="stylesheet" href="../CSS/index.css">
-        <link rel="shortcut icon" href="../Imagenes/logos/logo.png"
-            type="image/x-icon">
+        <link rel="shortcut icon" href="../Imagenes/logos/logo.png">
+        <script src="https://kit.fontawesome.com/41bcea2ae3.js" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="/Footer/CSS/Estilo_footer.css" type="text/css">
         <script src="../JS/externos.js"></script>
+        <script src="/JS/categoria.js"></script>
+        <script src="/JS/abrir.js"></script>
     </head>
 
     <body>
@@ -15,178 +18,175 @@
 
             <div id="Cuerpo">
                 <div id="Cabeza">
+                    <div class="usuario" >
+                        <p style="font-size: 25px;">Iniciar Sesion</p>
+                    </div>
                     <header>
                         <div class="Titulo">
                             <p class="tsup">DULCERIA</p>
                             <p class="tmid"><sup>LA</sup> ESMERALDA </p>
                             <p class="tsub">CHOCOLATES Y BOTANAS DE CALIDAD</p>
                         </div>
-
+                        
                     </header>
+                    <div class="carrito1"><i class="fa-solid fa-cart-shopping" style="font-size: 50px;"></i></div>
+                </div>
+                <div class="msup">
+                        
+                        
                 </div>
                 <div id="navegador">
-                    <div class="msup">
-                        <div class="mbuscador">
-                            <div class="buscador-contenedor">
-                                <input type="text" name="text" class="buscador"
-                                    placeholder="Busacar">
-                                <span class="lupa">
-                                    <svg width="19px" height="19px"
-                                        viewBox="0 0 24 24" fill="none"
-                                        xmlns="http://www.w3.org/2000/svg"><g
-                                            id="SVGRepo_bgCarrier"
-                                            stroke-width="0"></g><g
-                                            id="SVGRepo_tracerCarrier"
-                                            stroke-linecap="round"
-                                            stroke-linejoin="round"></g><g
-                                            id="SVGRepo_iconCarrier"> <path
-                                                opacity="1" d="M14 5H20"
-                                                stroke="#000" stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                            <path opacity="1" d="M14 8H17"
-                                                stroke="#000" stroke-width="1.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                            <path
-                                                d="M21 11.5C21 16.75 16.75 21 11.5 21C6.25 21 2 16.75 2 11.5C2 6.25 6.25 2 11.5 2"
-                                                stroke="#000" stroke-width="2.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                            <path opacity="1" d="M22 22L20 20"
-                                                stroke="#000" stroke-width="3.5"
-                                                stroke-linecap="round"
-                                                stroke-linejoin="round"></path>
-                                        </g></svg>
-                                </span>
-                            </div>
-                        </div>
-                        <div class="mperfil">
-                            <div class="usuario">
-                                <div class="imgusuario">
-                                    <p class="imgusuario"></p>
-                                </div>
-                                <div>
-                                    <p class="nomusuario">hola mundo</p>
-                                </div>
-                            </div>
-                            <a class="carrito" href="../HTML/carrito.html">
-
-                            </a>
-                        </div>
-                    </div>
+                    
                     <div class="msub">
                         <nav id="menu">
-                            <ul>
-                                <li class="n1">CATEGORIAS
-                                    <ul>
-                                        <a href="../HTML/1index.htm"> <li
-                                                class="n2">Cacahuates</li> </a>
-                                        <a href="../HTML/2input.html"><li
-                                                class="n2">Gomitas</li></a>
-                                    </ul>
-                                </li>
-                                <li class="n1">MARCAS
-                                    <ul>
-                                        <a href="../HTML/sobreMi.html"><li
-                                                class="n2">1</li>
-                                        </a>
-                                    </ul>
-                                </li>
-                                <li class="n1">TEMPORADA
-                                    <ul>
-                                        <a href="../HTML/1index.htm"><li
-                                                class="n2">1</li></a>
-                                        <a href="../HTML/2input.html"><li
-                                                class="n2">2</li></a>
+                        <ul>
+                            <li class="n1">CATEGORIAS
+                        <ul>
+                            <a href="/HTML/chcolates.html"><li class="n2">Chocolates</li></a>
+                            <a href="/HTML/caramelos.html"><li class="n2">Caramelos</li></a>
+                            <a href="../HTML/2input.html"><li class="n2">Gomitas</li></a>
+                            <a href="../HTML/2input.html"><li class="n2">Fiestas</li></a>
+                            <a href="../HTML/2input.html"><li class="n2">Botanas</li></a>
+                            <a href="../HTML/2input.html"><li class="n2">Otros</li></a>
 
-                                    </ul>
-                                </li>
-                                <li class="n1">FIESTAS
-                                    <ul>
-                                        <a href="../HTML/sobreMi.html"><li
-                                                class="n2">1</li>
-                                        </a>
-                                    </ul>
-                                </li>
-                                <li class="n1">SNAKS LOCOS
-                                    <ul>
-                                        <a href="../HTML/sobreMi.html"><li
-                                                class="n2">gg</li>
-                                        </a>
-                                    </ul>
-                                </li>
-                            </ul>
-                        </nav>
+                        </ul>
+                    </li>
+                    <li class="n1">MARCAS
+                        <ul>
+                            <a href="../HTML/sobreMi.html"><li
+                                    class="n2">1</li>
+                                </a>
+                        </ul>
+                    </li>
+                    <li class="n1">TEMPORADA
+                        <ul>
+                            <a href="../HTML/1index.htm"><li
+                                    class="n2">Navidad <i class="fa-solid fa-tree"></i></li></a>
+                            <a href="../HTML/2input.html"><li
+                                    class="n2">Halloween <i class="fa-solid fa-ghost"></i></li></a>
+                            <a href="../HTML/2input.html"><li
+                                    class="n2">San Valentin <i class="fa-solid fa-heart"></i></li></a>
+                            <a href="../HTML/2input.html"><li
+                                    class="n2">Pascua <i class="fa-solid fa-egg"></i></i></li></a>
+                            <a href="../HTML/2input.html"><li
+                                    class="n2">Dia del niño <i class="fa-solid fa-child-reaching"></i></li></a>
+                            <a href="../HTML/1index.htm"><li
+                                    class="n2">Dia de las madres<i class="fa-solid fa-person-breastfeeding"></i></i></li></a>
+                        </ul>
+                    </li>
+                    <li class="n1">FIESTAS
+                        <ul>
+                            <a href="../HTML/sobreMi.html"><li class="n2">Piñatas</li></a>
+                            <a href="../HTML/sobreMi.html"><li class="n2">Goblos</li></a>
+                            <a href="../HTML/sobreMi.html"><li class="n2">Velas</li></a>
+                            <a href="../HTML/sobreMi.html"><li class="n2">Confeti</li></a>
+                        </ul>
+                    </li>
+                    <li class="n1">SNAKS LOCOS
+                        <ul>
+                            <a href="../HTML/sobreMi.html"><li class="n2">gg</li>
+                            </a>
+                        </ul>
+                    </li>
+                    </ul>
+                    </nav>
                     </div>
                 </div>
                 <div class="Anuncios">
                     <div class="anuncio">
                         <ul>
-                            <li><img
-                                    src="../Imagenes/animacion/imagen1.jpg"></li>
-                            <li><img
-                                    src="../Imagenes/animacion/imagen2.jpg"></li>
-                            <li><img
-                                    src="../Imagenes/animacion/imagen3.jpg"></li>
-                            <li><img
-                                    src="../Imagenes/animacion/imagen4.jpg"></li>
+                            <li><img src="/imagenes1/Diseño sin título.jpg"></li>
+                            <li><img  src="/imagenes1/Prueba nuestros snacks locos!.jpg"></li>
+                            <li> <img src="/imagenes1/personaliza tus snacks (2).png"></li>
+                            <li><img src="/imagenes1/imagen4.jpg"></li>
                         </ul>
                     </div>
                 </div>
-                <div class="Categorias">
-                    <button class="dulces" id="chocolate">CHOCOLATES</button>
-                    <button class="dulces" id="caramelos">CARAMELOS</button>
-                    <button class="dulces" id="gomitas">GOMITAS</button>
-                    <button class="dulces" id="chicles">CHICLES</button>
-                    <button class="dulces" id="bombones">BOMBONES</button>
-                    <button class="dulces" id="botanas">BOTANAS</button>
+                <div class="mas_vendido_texto">"Productos más vendidos"</div>
+                <div class="lomasvendido">
+                    <section class="contenedor">
+                        <div class="contenedor-items">
+                            <div class="item">
+                                <span class="titulo-item"></span>
+                                <img src="../imagenes1/Ferrero_8pz.webp" alt="" class="img-item">
+                                <span class="precio-item">$15.⁰⁰</span>
+                                <button class="boton-item">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div class="item">
+                                <span class="titulo-item">Ferrero_8pz</span>
+                                <img src="../imagenes1/Ferrero_8pz.webp" alt="" class="img-item">
+                                <span class="precio-item">$14.⁰⁰</span>
+                                <button class="boton-item">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div class="item">
+                                <span class="titulo-item">Ferrero_8pz</span>
+                                <img src="../imagenes1/Ferrero_8pz.webp" alt="" class="img-item">
+                                <span class="precio-item">$15.⁰⁰</span>
+                                <button class="boton-item">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div class="item">
+                                <span class="titulo-item">Ferrero_8pz</span>
+                                <img src="../imagenes1/Ferrero_8pz.webp" alt="" class="img-item">
+                                <span class="precio-item">$15.⁰⁰</span>
+                                <button class="boton-item">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            <div class="item">
+                                <span class="titulo-item">Ferrero_8pz</span>
+                                <img src="../imagenes1/Ferrero_8pz.webp" alt="" class="img-item">
+                                <span class="precio-item">$15.⁰⁰</span>
+                                <button class="boton-item">Agregar al carrito <i class="fa-solid fa-cart-shopping"></i></button>
+                            </div>
+                            
+                        </div>
+                        
+                    </section>
                 </div>
-                <footer>
-
+                <div class="Categorias">
+                    <button class="dulces" id="chocolate"><a href="chcolates.html" >CHOCOLATES</a></button>
+                    <button class="dulces" id="caramelos"><a href="caramelos.html" >CARAMELOS</a></button>
+                    <button class="dulces" id="gomitas"><a href="index.html">GOMITAS</a></button>
+                    <button class="dulces" id="bombones"><a href="index.html">FIESTAS</a></button>
+                    <button class="dulces" id="botanas"><A href="index.html">BOTANAS</A></button>
+                    <button class="dulces" id="chicles"><a href="index.html">OTROS</a></button>
+                </div>
+                
+                <div class="globo"><P>Dale un vistaso a todas nuestras categorias</P></div>
+                <div class="tendera"></div>
+                
+                <footer >
+                    
+                        
+                    
                     <div class="container_footer">
                         <div class="box_footer">
                             <div class="logo">
-                                <img src="../Sources/Icono Empresa.jpg" alt>
+                                <img src="/Footer/Sources/Icono Empresa.jpg" alt="">
                             </div>
                             <div class="terms">
-                                <p> <b>Dulceria la esmeralda
-                                    </b>tu nueva parada para disfrutar de dulces
-                                    exquisitos.
-                                    Descubre nuestra variedad de delicias
-                                    tradicionales y contemporáneas.
-                                    Encuéntranos en
-                                    <b>"Vicente Riva Palacio 310, Felipe Ángeles, 43640 Tulancingo, Hgo."</b>
-                                    .¡Endulza tu día con nosotros con dulces y
-                                    chocolates de calidad!</p>
+                                <p> <b>Dulceria la esmeralda </b>tu nueva parada para disfrutar de dulces exquisitos. Descubre nuestra variedad de delicias tradicionales y contemporáneas. Encuéntranos en <b>"Vicente Riva Palacio 310, Felipe Ángeles, 43640 Tulancingo, Hgo."</b> .¡Endulza tu día con nosotros con dulces y chocolates de calidad!</p>
                             </div>
                         </div>
                         <div class="box_footer">
                             <h2>Soluciones</h2>
-                            <a href="#">App Desarrollo</a>
-                            <a href="#">App Marketing</a>
-                            <a href="#">IOS Desarrollo</a>
-                            <a href="#">Android Desarrollo</a>
+                            <a href="/HTML/mantenimiento.html" >App Desarrollo</a>
+                            <a href="/HTML/mantenimiento.html">App Marketing</a>
+                            <a href="/HTML/mantenimiento.html">IOS Desarrollo</a>
+                            <a href="/HTML/mantenimiento.html">Android Desarrollo</a>
                         </div>
-
+            
                         <div class="box_footer">
                             <h2>Compañia</h2>
                             <a href="#">Acerca de</a>
-                            <a href="#">Trabajos</a>
-                            <a href="#">Procesos</a>
-                            <a href="#">Servicios</a>
+                            <a href="/HTML/mantenimiento.html">Trabajos</a>
+                            <a href="/HTML/mantenimiento.html">Procesos</a>
+                            <a href="/HTML/mantenimiento.html">Servicios</a>
                         </div>
-
+            
                         <div class="box_footer">
                             <h2>Redes Sociales</h2>
-                            <a href="#"><i
-                                    class="fab fa-facebook-square"></i>Facebook</a>
-                            <a href="#"><i
-                                    class="fab fa-twitter-square"></i>Twitter</a>
-                            <a href="#"><i
-                                    class="fab fa-whatsapp-square"></i>WhatsApp</a>
-                            <a href="#"><i
-                                    class="fab fa-instagram-square"></i>Instagram</a>
+                            <a href="https://www.facebook.com/profile.php?id=61560111917393&mibextid=ZbWKwL"><i class="fab fa-facebook-square"></i>Facebook</a>
+                            <a href="#"><i class="fab fa-twitter-square"></i>Twitter</a>
+                            <a href="https://wa.me/7717508657"><i class="fab fa-whatsapp-square"></i>WhatsApp</a>
                         </div>
                     </div>
                     <div class="Ubicacion">
@@ -194,21 +194,68 @@
                             <h3>Ubicacion</h3>
                         </div>
                         <div class="cuerpo">
-                            <iframe
-                                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5299.311026420954!2d-98.38117635548772!3d20.084812838388938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d0570010264587%3A0xd84ddee86b0666fa!2zRHVsY2Vyw61hIOKAnExhIEVzbWVyYWxkYeKAnQ!5e0!3m2!1ses-419!2smx!4v1717603954677!5m2!1ses-419!2smx"
-                                width="400" height="300" style="border:0;"
-                                allowfullscreen loading="lazy"
-                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5299.311026420954!2d-98.38117635548772!3d20.084812838388938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d0570010264587%3A0xd84ddee86b0666fa!2zRHVsY2Vyw61hIOKAnExhIEVzbWVyYWxkYeKAnQ!5e0!3m2!1ses-419!2smx!4v1717603954677!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
                         </div>
-                        <div class="box_copyright">
-                            <hr>
-                            <p>Todos los derechos reservados &copy; 2024
-                                <b>La Esmeralda</b></p>
+
+                    </div>
+                    <div class="box_copyright">
+                        <hr>
+                        <p>Todos los derechos reservados &copy; 2024
+                        <b>La Esmeralda</b></p>
+                    </div>
+                    
+                </footer>
+
+                <!--<div id="Pie">
+                    <div class="Politicas">
+                        <div class="titulo">
+                            <h3>Terminos y condiciones</h3>
                         </div>
-                    </footer>
+                        <div class="cuerpo">
+                            <a href>Terminos y condiciones</a>
+                            <br>
+                            <a href>Aviso de privacidad</a>
+                        </div>
+
+                    </div>
+                    <div class="info">
+                        <div class="titulo">
+                            <h3>Información</h3>
+                        </div>
+                        <div class="cuerpo">
+                            <a href>¿Como comprar?</a>
+                        </div>
+                        </div>
+                    <div class="Ubicacion">
+                        <div class="titulo">
+                            <h3>Ubicacion</h3>
+                        </div>
+                        <div class="cuerpo">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d5299.311026420954!2d-98.38117635548772!3d20.084812838388938!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d0570010264587%3A0xd84ddee86b0666fa!2zRHVsY2Vyw61hIOKAnExhIEVzbWVyYWxkYeKAnQ!5e0!3m2!1ses-419!2smx!4v1717603954677!5m2!1ses-419!2smx" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+
+                    </div>
+                    <div class="Contactos">
+                        <div class="titulo">
+                            <h3>Contactos</h3>
+                        </div>
+                        <div class="cuerpo">
+                            <a href>telefono:</a>
+                            <br>
+                            <a href>Correo: ejemplo</a>
+                            <br>
+                            <a href>Ubicacion:</a>
+                            <br>
+                            <p>Horario</p>
+                        </div>
+-->
+                    </div>
                 </div>
 
             </div>
-        </body>
 
-    </html>
+        </div>
+        
+    </body>
+
+</html>
